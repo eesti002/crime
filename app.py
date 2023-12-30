@@ -3,12 +3,10 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 import pickle
 
-# loading in the scaler object for scaling features
-with open('scaler.pkl', 'rb') as scaler_file:
-    scaler = pickle.load(scaler_file)
+
 
 # loading in the saved model
-with open('rfc_model.pkl', 'rb') as model_file:
+with open('random_forest_model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
 def main():
